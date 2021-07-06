@@ -1,14 +1,19 @@
 import React from 'react'
-import { Text,Box,Center } from "@chakra-ui/react"
+import { Flex, Heading,Text } from "@chakra-ui/react"
+import CategorieList from '../components/CategorieList'
+import CategorieItem from '../components/CategorieItem'
+
 const AdopcionHome = () => {
     return (
-        <Center>
-            <Box mt={400} fontSize="32" p={4} color="white">
-                <Text>
-                    Home App
-                </Text>
-            </Box>
-        </Center>
+        <Flex direction="column" mt="2" alignItems="center">
+            <Heading mt="5" mb="5">
+                Adopta una mascota
+            </Heading>
+            <Text>Categorías de mascotas</Text>
+           
+            <CategorieItem />
+            <CategorieList />
+        </Flex>
     )
 }
 
